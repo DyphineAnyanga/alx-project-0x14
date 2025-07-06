@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
@@ -38,3 +39,60 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+=======
+# CineSeek - Movie Discovery Application
+
+## Project Overview
+
+CineSeek is a modern movie discovery application built with **Next.js**, **TypeScript**, and **Tailwind CSS**. It allows users to browse and search for movies using the MoviesDatabase API. The application features dynamic filtering by year and genre, a clean and responsive layout, reusable components, and server-side data fetching using Next.js API routes.
+
+---
+
+## API Overview
+
+The MoviesDatabase API is a RESTful API offering access to detailed movie data. It allows developers to retrieve lists of movies, filter results by genre and year, access individual movie details, and implement pagination for efficient data browsing.
+
+### Key Features:
+- Search movie titles
+- Filter by genre and year
+- Fetch detailed movie information
+- Supports pagination
+
+---
+
+## API Version
+
+**v1**
+
+---
+
+## Available Endpoints
+
+| Endpoint            | Description                                           |
+|---------------------|-------------------------------------------------------|
+| `/titles`           | Fetch a list of movies with optional filters         |
+| `/titles/:id`       | Get detailed info for a specific movie               |
+| `/genres`           | List all available movie genres                      |
+| `/years`            | List available release years for filtering           |
+
+---
+
+## Request and Response Format
+
+### Example Request:
+
+### Example Response:
+```json
+{
+  "results": [
+    {
+      "id": "tt123456",
+      "title": "Movie Title",
+      "year": 2023,
+      "genres": ["Action", "Adventure"]
+    }
+  ],
+  "page": 1,
+  "total_pages": 10
+}
+>>>>>>> 5b0635181fa80f45891bf641881743ff5f2d57b7
